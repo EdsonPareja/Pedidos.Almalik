@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Almalik - Mayorista por Curva</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Almalik Logo" class="logo" />
+    <h1>Venta mayorista por curva</h1>
+  </header>
+  <main>
+    <div class="product">
+      <img src="palazo.jpg" alt="Palazo" />
+      <h2>Palazos</h2>
+      <p>$13.000 x curva</p>
+      <button onclick="addToCart('Palazos', 13000)">Agregar</button>
+    </div>
+    <div class="product">
+      <img src="jogger.jpg" alt="Jogger" />
+      <h2>Joggers</h2>
+      <p>$12.000 x curva</p>
+      <button onclick="addToCart('Joggers', 12000)">Agregar</button>
+    </div>
+    <div class="product">
+      <img src="buzo.jpg" alt="Buzo" />
+      <h2>Buzos</h2>
+      <p>$14.000 x curva</p>
+      <button onclick="addToCart('Buzos', 14000)">Agregar</button>
+    </div>
+    <div class="product">
+      <img src="campera.jpg" alt="Campera" />
+      <h2>Camperas</h2>
+      <p>$16.000 x curva</p>
+      <button onclick="addToCart('Camperas', 16000)">Agregar</button>
+    </div>
+  </main>
+  <div id="cart" class="cart">
+    <h3>Carrito</h3>
+    <ul id="cart-items"></ul>
+    <p id="total"></p>
+    <a id="whatsapp" href="#" target="_blank">Enviar pedido por WhatsApp</a>
+  </div>
+  <a href="#" id="whatsapp-float" class="whatsapp-button" target="_blank">📱</a>
+  <script src="script.js"></script>
+</body>
+</html>
